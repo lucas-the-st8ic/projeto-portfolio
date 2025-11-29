@@ -9,9 +9,9 @@
 */
 
 * {
-  /* margin: 0px;
+  margin: 0px;
   padding: 0px;
-  box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 :root {
@@ -34,7 +34,9 @@ body {
 header {
   background-color: var(--destaque);
   color:var(--texto);
-  padding: 15px;
+  padding: 20px;
+  margin: 0px 0px 0px 0px;
+  border-radius: 0px 0px 15px 15px;
 
   display: flex;
   justify-content: flex-end;
@@ -54,10 +56,10 @@ nav#menu a {
   font-weight: 800;
   padding: 12px 15px;
   border-radius: 10px;
+  transition: background-color 2s, color 1s;
 }
 
 nav#menu a:hover {
   background-color: var(--destaque-inverso);
-  
+  color: var(--destaque)
 }
-
