@@ -15,7 +15,7 @@
 }
 
 :root {
-  --fundo-principal: #eaeaea;
+  --fundo-principal: #d0d0d0;
   --texto: #1A1A1A;
   --texto-inverso: #E5E5E5;
   --destaque-inverso: #19344eee;
@@ -153,4 +153,45 @@ article > h2 {
   width: 100%;
   height: 100%;
   border-radius: 8px;
+}
+
+#skills__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+#skills__container .item__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#skills__container .info__nome {
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#skills__container .info__porcentagem {
+  font-weight: bold;
+  color: var(--destaque);
+}
+
+#skills__container .item__barra {
+  width: 100%;
+  height: 15px;
+  border-radius: 6px;
+  background-color: var(--fundo-principal);
+}
+
+#skills__container .barra__progressao {
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  #skills__container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
