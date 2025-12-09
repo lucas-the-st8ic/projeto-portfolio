@@ -190,6 +190,45 @@ article > h2 {
   border-radius: 6px;
 }
 
+#formacao__container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 25px;
+  text-align: justify;
+  
+}
+
+#formacao__container .container__item-curso {
+  background-color: var(--fundo-principal);
+  border-left: 6px solid var(--destaque-inverso);
+  border-radius: 6px;
+  padding: 15px 5px 5px 25px;
+  transition: border-width 0.5s, border-color 0.8s;
+}
+
+#formacao__container .container__item-curso:hover {
+  border-left-width: 20px;
+  cursor: pointer;
+  border-color: var(--destaque);
+}
+
+#formacao__container .item__periodo {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#formacao__container .instituicao {
+  color: var(--destaque-inverso);
+  font-size: 1.1em;
+  transition: color 0.8s;
+}
+
+#formacao__container .instituicao:hover {
+  color: var(--destaque);
+  font-size: 1.1em;
+}
+
 @media screen and (min-width: 768px) {
   #skills__container {
     grid-template-columns: 1fr 1fr;
