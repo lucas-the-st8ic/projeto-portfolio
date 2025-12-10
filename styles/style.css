@@ -111,7 +111,7 @@ div#social {
   justify-content: flex-end;
   align-items: center;
   font-size: 2em;
-  margin: 50px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
   gap: 15px;
 }
 
@@ -285,6 +285,20 @@ footer >a:hover {
 }
 
 @media screen and (min-width: 768px) {
+
+  main {
+    grid-template-columns: auto 300px 1fr auto;
+
+  }
+
+  section#ficha {
+    grid-column: 2 / 3;
+  }
+
+  section#detalhes {
+    grid-column: 3 / 4;
+  }
+
   #skills__container {
     grid-template-columns: 1fr 1fr;
   }
