@@ -292,9 +292,21 @@ footer >a:hover {
   }
 
   section#ficha {
+    height: fit-content;
+    position: sticky;
+    top: 65px;
     grid-column: 2 / 3;
   }
 
+  div#social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  margin: 50px 0px 20px 0px;
+  gap: 5px;
+}
+  
   section#detalhes {
     grid-column: 3 / 4;
   }
