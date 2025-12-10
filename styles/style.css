@@ -25,7 +25,7 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.5em;
+  line-height: 1em;
 
   background-color: var(--fundo-principal);
   color: var(--texto);
@@ -100,7 +100,7 @@ section#ficha h1 {
 }
 
 section#ficha > p {
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
 div#social {
